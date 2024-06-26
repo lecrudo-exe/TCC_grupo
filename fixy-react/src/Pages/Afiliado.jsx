@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Afiliado() {
@@ -49,7 +48,7 @@ function Afiliado() {
                     </div>
                 </div>
                 <div className="mt-8">
-                    <Link to="/cadastro" className="bg-yellow-500 hover:bg-yellow-400 transition-all text-black py-2 px-4 rounded">
+                    <Link to="/cadastroParceiro" className="bg-yellow-500 hover:bg-yellow-400 transition-all text-black py-2 px-4 rounded">
                         Cadastre-se
                     </Link>
                 </div>

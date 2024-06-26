@@ -1,4 +1,4 @@
-import React from 'react';
+import loginImg from '../assets/login.png'
 import { Link } from 'react-router-dom';
 
 function Cliente() {
@@ -7,7 +7,7 @@ function Cliente() {
             {/* Seção de Imagem Principal */}
             <section className="relative">
                 <img 
-                    src="login.png" // Substitua pelo caminho da imagem correta
+                    src={loginImg} // Substitua pelo caminho da imagem correta
                     alt="Background"
                     className="w-full h-96 object-cover opacity-80"
                 />

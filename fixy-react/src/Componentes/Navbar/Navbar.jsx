@@ -12,8 +12,15 @@ function Navbar() {
         else  if (location.pathname.includes('/cliente')) {
           return '/login';
         }
+        else if (location.pathname.includes('/loginParceiro')){
+            return '/loginParceiro'
+        }
+        else if (location.pathname.includes('/login')){
+            return '/login'
+        }
+        
         else {
-            return '/aa'
+            return '/escolhaLogin'
         }
       };
 

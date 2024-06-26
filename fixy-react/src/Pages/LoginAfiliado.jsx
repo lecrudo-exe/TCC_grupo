@@ -25,10 +25,12 @@ export default function LoginAfiliado() {
                         <p>Esqueci minha senha</p>
                     </Link>
                 </div>
-                <button className='w-full my-5 py-2 bg-yellow-500 shadow-lg shadow-yellow-500/50 hover:shadow-yellow-500/40 text-white font-semibold rounded-lg'>LOGIN</button>
+                <Link to={'/'}>
+                    <button className='w-full my-5 py-2 bg-yellow-500 shadow-lg shadow-yellow-500/50 hover:shadow-yellow-500/40 text-white font-semibold rounded-lg'>LOGIN</button>
+                </Link>
                 <div className='flex justify-center text-gray-400 py-2'>
                     <p className='flex items-center'>Não tem conta? / ‎</p>
-                    <Link to={'/'}>
+                    <Link to={'/cadastroParceiro'}>
                         <p className='text-yellow-500 underline'>Registrar</p>
                     </Link>
                 </div>

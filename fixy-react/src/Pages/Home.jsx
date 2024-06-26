@@ -26,7 +26,7 @@ function Home() {
                             um serviço, a Fixy conecta as oportunidades compatíveis, 
                             facilitando a expansão de seus clientes e negócios.
                         </p>
-                        <Link to="cliente" className="bg-transparent border-2 border-yellow-500 text-yellow-500  py-2 px-4 hover:tracking-widest transition-all ' : 'border-b-2 px-2 border-yellow-500  hover:tracking-widest transition-all">
+                        <Link to="afiliado" className="bg-transparent border-2 border-yellow-500 text-yellow-500  py-2 px-4 hover:tracking-widest transition-all ' : 'border-b-2 px-2 border-yellow-500  hover:tracking-widest transition-all">
                             AFILIADO
                         </Link>
                     </div>
