@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 function Home() {
     return (
@@ -15,8 +16,9 @@ function Home() {
             {/* Seção "Como Funciona" */}
             <section className="py-10 text-center">
                 <h2 className="text-yellow-500 text-3xl mb-8">Como Funciona</h2>
+
                 <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6">
-                    <div className="bg-gray-800 p-6 rounded-lg shadow-md w-80">
+                    <div className="bg-gray-800 p-6 rounded-lg shadow-md w-80 h-80 p-2 flex flex-col justify-between">
                         <h3 className="text-2xl mb-4">Afiliado</h3>
                         <p className="mb-4">
                             Para o pedreiro, o processo é direto: ele cadastra suas 
@@ -24,21 +26,21 @@ function Home() {
                             um serviço, a Fixy conecta as oportunidades compatíveis, 
                             facilitando a expansão de seus clientes e negócios.
                         </p>
-                        <button className="bg-transparent text-black border-2 border-yellow-500 text-yellow-500  py-2 px-4 rounded">
-                            Afiliado
-                        </button>
+                        <Link to="cliente" className="bg-transparent border-2 border-yellow-500 text-yellow-500  py-2 px-4 hover:tracking-widest transition-all ' : 'border-b-2 px-2 border-yellow-500  hover:tracking-widest transition-all">
+                            AFILIADO
+                        </Link>
                     </div>
-                    <div className="bg-gray-800 p-6 rounded-lg shadow-md w-80">
-                        <h3 className="text-2xl mb-4">Cliente</h3>
+                    <div className="bg-gray-800 p-6 rounded-lg shadow-md w-80 h-80 p-2 flex flex-col justify-between">
+                        <h3 className="text-2xl mb-4 ">Cliente</h3>
                         <p className="mb-4">
                             Para o cliente, é fácil: ele descreve o problema e informa sua 
                             localização no app da Fixy. A plataforma filtra e apresenta 
                             pedreiros disponíveis para o trabalho, simplificando a busca 
                             por um profissional.
                         </p>
-                        <button className="bg-transparent text-black border-2 border-yellow-500 text-yellow-500 py-2 px-4 rounded">
-                            Cliente
-                        </button>
+                        <Link to="cliente" className="bg-transparent text-black border-2 border-yellow-500 text-yellow-500 py-2 px-4 hover:tracking-widest transition-all ' : 'border-b-2 px-2 border-yellow-500  hover:tracking-widest transition-all">
+                            CLIENTE
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -47,21 +49,21 @@ function Home() {
             <section className="py-10 text-center">
                 <h2 className="text-yellow-500 text-3xl mb-8">Solicitação de serviço</h2>
                 <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6">
-                    <img 
-                        src="path_to_your_image.png" 
-                        alt="Worker" 
-                        className="w-full md:w-1/3 h-80 object-cover opacity-80 rounded"
-                    />
                     <div className="text-left max-w-md">
                         <p className="mb-4">
                             Cadastre-se, descreva o seu problema e informe sua localização. 
                             Nosso sistema filtrará pedreiros qualificados próximos de você, 
                             facilitando a contratação do profissional ideal para suas necessidades.
                         </p>
-                        <button className="bg-yellow-500 text-black py-2 px-4 rounded">
+                        <Link to="404" className="bg-yellow-500 hover:bg-yellow-400 transition-all text-black py-2 px-4">
                             Solicitar um serviço
-                        </button>
+                        </Link>
                     </div>
+                    <img 
+                        src="pintor.jpg" 
+                        alt="Worker" 
+                        className="w-full md:w-1/3 h-96 object-cover bg-center opacity-80 rounded"
+                    />
                 </div>
             </section>
         </main>
