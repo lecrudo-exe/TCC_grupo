@@ -7,6 +7,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import PageNotFound from './Pages/PageNotFound.jsx'
 import Home from './Pages/Home.jsx'
+import Login from './Pages/Login.jsx'
+import Cliente from './Pages/Cliente.jsx'
+import Afiliado from './Pages/Afiliado.jsx'
 
 
 const router = createBrowserRouter(
@@ -16,7 +19,9 @@ const router = createBrowserRouter(
       element: <App/>,
       children: [
         {index: true, element: <Home/> },
-        
+        {path: "login", element: <Login/>},
+        {path: "cliente", element: <Cliente/>},
+        {path: "afiliado", element: <Afiliado/>},
         {path: "*", element: <PageNotFound/>}
       ]
     }

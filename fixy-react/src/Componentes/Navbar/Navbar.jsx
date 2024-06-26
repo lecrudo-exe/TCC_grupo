@@ -12,10 +12,10 @@ function Navbar() {
                 </li>
 
                 <li className={`${location.pathname === '/filmes' ? 'text-teal-500 hover:tracking-widest transition-all' : 'hover:tracking-widest transition-all'}`}>
-                    <Link to = "filmes">CLIENTE</Link></li>
+                    <Link to = "cliente">CLIENTE</Link></li>
 
                 <li className={`${location.pathname === '/news' ? 'text-teal-500 hover:tracking-widest transition-all' : 'hover:tracking-widest transition-all'}`}>
-                    <Link to = "news">AFILIADO</Link></li>
+                    <Link to = "afiliado">AFILIADO</Link></li>
             </ul>
         </nav>
      );
