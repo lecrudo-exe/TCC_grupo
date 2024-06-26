@@ -1,25 +1,7 @@
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
+
 
 function Banner({ id }) {
-    const [filme, setFilme] = useState({});
-    const apiKey = 'api_key=d1bef122d48992b960cc79c7306f5c1b';
-    const urlBase = 'https://api.themoviedb.org/3/movie/';
-    const urlImg = 'https://image.tmdb.org/t/p/w1280/';
-
-    useEffect(() => {
-        if (id) {
-            fetch(`${urlBase}${id}?${apiKey}&language=pt-BR`)
-                .then(response => response.json())
-                .then(response => setFilme(response))
-                .catch(error => console.log(error));
-        }
-    }, [id]);
-
-    if (!filme.backdrop_path) {
-        return null;
-    }
 
     return (
         <div 
@@ -40,9 +22,5 @@ function Banner({ id }) {
         </div>
     );
 }
-
-Banner.propTypes = {
-    id: PropTypes.string.isRequired,
-};
 
 export default Banner;
