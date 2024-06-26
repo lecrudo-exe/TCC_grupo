@@ -10,6 +10,7 @@ import Home from './Pages/Home.jsx'
 import Login from './Pages/Login.jsx'
 import Cliente from './Pages/Cliente.jsx'
 import Afiliado from './Pages/Afiliado.jsx'
+import LoginAfiliado from './Pages/LoginAfiliado.jsx'
 
 
 const router = createBrowserRouter(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
         {path: "login", element: <Login/>},
         {path: "cliente", element: <Cliente/>},
         {path: "afiliado", element: <Afiliado/>},
+        {path: "loginParceiro", element: <LoginAfiliado/>},
         {path: "*", element: <PageNotFound/>}
       ]
     }
