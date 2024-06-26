@@ -7,6 +7,14 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 
 import Home from './pages/Home.jsx'
+import PgAfiliado from './pages/PgAfiliado.jsx'
+import PgCliente from './pages/PgCliente.jsx'
+import PgLogin from './pages/PgLogin.jsx'
+import PageNotFound from './pages/PageNotFound.jsx'
+import PgPerfilAfiliado from './pages/PgPerfilAfiliado.jsx'
+import PgPerfilCliente from './pages/PgPerfilCliente.jsx'
+
+
 
 const router = createBrowserRouter(
   [
@@ -15,9 +23,11 @@ const router = createBrowserRouter(
       element: <App/>,
       children: [
         {index: true, element: <Home/> },
-        {path: "filmes", element: <Filmes/>},
-        {path: "filmes/:id", element: <PaginaFilme/>},
-        {path: "news", element: <News/>},
+        {path: "pgAfiliado", element: <PgAfiliado/>},
+        {path: "pgCliente", element: <PgCliente/>},
+        {path: "pgLogin", element: <PgLogin/>},
+        {path: "pgPerfilAfiliado", element: <PgPerfilAfiliado/>},
+        {path: "pgPerfilCliente", element: <PgPerfilCliente/>},
         {path: "*", element: <PageNotFound/>}
       ]
     }
