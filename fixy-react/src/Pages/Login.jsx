@@ -1,10 +1,11 @@
-import loginImg from '../assets/login.jpg'
+import loginImg from '../assets/login.png'
+import { Link } from 'react-router-dom'
 
 export default function Login() {
   return (
     <div className='grid grid-cols-1 sm:grid-cols-2 h-screen w-full'>
         <div className='hidden sm:block'>
-            <img className='w-full h-full object-cover' src={loginImg} alt="" />
+            <img className='w-full h-full object-cover scale-x-[-1]' src={loginImg} alt="" />
         </div>
 
         <div className='bg-black flex flex-col justify-center'>
@@ -20,9 +21,17 @@ export default function Login() {
                 </div>
                 <div className='flex justify-between text-gray-400 py-2'>
                     <p className='flex items-center'><input className='mr-2' type="checkbox" /> Lembrar-me</p>
-                    <p>Esqueci minha senha</p>
+                    <Link to={'/'}>
+                        <p>Esqueci minha senha</p>
+                    </Link>
                 </div>
                 <button className='w-full my-5 py-2 bg-yellow-500 shadow-lg shadow-yellow-500/50 hover:shadow-yellow-500/40 text-white font-semibold rounded-lg'>LOGIN</button>
+                <div className='flex justify-center text-gray-400 py-2'>
+                    <p className='flex items-center'>Não tem conta? / ‎</p>
+                    <Link to={'/'}>
+                        <p className='text-yellow-500 underline'>Registrar</p>
+                    </Link>
+                </div>
                 
             </form>
         </div>
