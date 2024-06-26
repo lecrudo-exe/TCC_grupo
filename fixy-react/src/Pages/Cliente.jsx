@@ -7,7 +7,7 @@ function Cliente() {
             {/* Seção de Imagem Principal */}
             <section className="relative">
                 <img 
-                    src="caminho_para_imagem.jpg" // Substitua pelo caminho da imagem correta
+                    src="login.png" // Substitua pelo caminho da imagem correta
                     alt="Background"
                     className="w-full h-96 object-cover opacity-80"
                 />
